@@ -36,11 +36,24 @@
 
 		.menu-favorites-button {
 			padding: $padding-xs;
+
+			// Fix missing spacing between favorite icons and label
+			:first-child {
+			    padding-right: $padding-xs;
+			}
 		}
 
 		.menu-context-menu {
 			@include background-element(secondary);
 		}
+
+		// Vertically align the "All Programs" text with the icon
+		.menu-category-button,
+	    .menu-category-button-selected {
+            :last-child {
+                padding-top: $padding-xxs - 1;
+            }
+        }
 	}
 
 	.right-buttons-box {

@@ -64,6 +64,8 @@
 
 .grouped-window-list {
 	&-thumbnail-menu {
+		@include background-element; // Transparent thumbnail menu fix
+		padding: $padding-xxs;
 		spacing: $padding-xxs;
 
 		.item-box {
@@ -95,7 +97,7 @@
 	}
 
 	&-button-label {
-		padding: 0; // Reset this
+		padding: 0 $padding-xs; // Fix missing spacing between icon and label
 	}
 
 	&-item-box {

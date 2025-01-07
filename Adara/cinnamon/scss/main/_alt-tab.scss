@@ -6,7 +6,7 @@
  *
  * See also window-list module for a similar selector
  */
-#uiGroup > #altTabPopup {
+#altTabPopup {
 	padding: 0;
 	spacing: $padding-xs;
 
@@ -23,12 +23,20 @@
 				@include hover;
 				color: $text-primary;
 
-				/* Popup thumbnail */
+				/*
+				 *  Popup thumbnail
+				 *      Commented this out because it also affects the last item in the window selection,
+				 *      not showing it as highlighted. The popup thumbnails are currently darkened
+				 *      like the selected item in the window selection, this should probably be fixed
+				 */
+
+				/*
 				&:last-child {
 					padding: $padding-xs;
 					background: none;
 					color: $text-primary;
 				}
+				*/
 			}
 		}
 	}
@@ -45,7 +53,7 @@
  * This styles the window name box when alt-tab is
  * in 'coverflow' or 'timeline' modes
  */
-#uiGroup > StWidget > .switcher-list {
+StWidget > .switcher-list {
 	@include background-element;
 	font-weight: normal;
 }
