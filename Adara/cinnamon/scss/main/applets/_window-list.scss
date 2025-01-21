@@ -132,6 +132,10 @@
 		}
 
 		&:closed {/* ! */}
+
+		.progress {
+			background-color: rgba($accent-success, .5);
+		}
 	}
 
 	&-badge {

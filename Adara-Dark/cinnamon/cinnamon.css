@@ -1050,6 +1050,10 @@ StEntry:focus > StIcon, StEntry:active > StIcon, StEntry:pressed > StIcon,
   /* ! */
 }
 
+.grouped-window-list-item-box .progress {
+  background-color: rgba(51, 204, 51, 0.5);
+}
+
 .grouped-window-list-badge {
   background: rgba(255, 255, 255, 0.85);
   color: #111;
