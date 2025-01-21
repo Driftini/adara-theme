@@ -149,9 +149,7 @@ StEntry StIcon,
   icon-size: 16px;
 }
 
-StEntry:focus > StIcon,
-StEntry:active > StIcon,
-StEntry:pressed > StIcon,
+StEntry:focus > StIcon, StEntry:active > StIcon, StEntry:pressed > StIcon,
 .menu StEntry:focus > StIcon,
 .menu StEntry:active > StIcon,
 .menu StEntry:pressed > StIcon,
@@ -186,12 +184,12 @@ StEntry:pressed > StIcon,
  * ====================================== */
 .check-box CinnamonGenericContainer {
   spacing: .2em;
-  min-height: 17px;
+  min-height: 16px;
 }
 
 .check-box StBin {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   background-image: url("img/controls/check-box.svg");
 }
 
@@ -209,12 +207,12 @@ StEntry:pressed > StIcon,
 
 .radiobutton CinnamonGenericContainer {
   spacing: .2em;
-  min-height: 17px;
+  min-height: 16px;
 }
 
 .radiobutton StBin {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   background-image: url("img/controls/radiobutton.svg");
 }
 
@@ -2412,9 +2410,7 @@ StEntry:pressed > StIcon,
   icon-size: 16px;
 }
 
-.menu .slingshot .entry:focus > StIcon,
-.menu .slingshot .entry:active > StIcon,
-.menu .slingshot .entry:pressed > StIcon {
+.menu .slingshot .entry:focus > StIcon, .menu .slingshot .entry:active > StIcon, .menu .slingshot .entry:pressed > StIcon {
   color: rgba(255, 255, 255, 0.95);
 }
 
@@ -2786,18 +2782,12 @@ StEntry:pressed > StIcon,
   font-size: 100%;
 }
 
-.panel-bottom .stopwatch-running, .panel-bottom
-.stopwatch-paused, .panel-bottom
-.stopwatch-ready:hover, .panel-bottom
-.stopwatch-paused:hover {
+.panel-bottom .stopwatch-running, .panel-bottom .stopwatch-paused, .panel-bottom .stopwatch-ready:hover, .panel-bottom .stopwatch-paused:hover {
   border-bottom: 1px;
   padding-top: 1px;
 }
 
-.panel-top .stopwatch-running, .panel-top
-.stopwatch-paused, .panel-top
-.stopwatch-ready:hover, .panel-top
-.stopwatch-paused:hover {
+.panel-top .stopwatch-running, .panel-top .stopwatch-paused, .panel-top .stopwatch-ready:hover, .panel-top .stopwatch-paused:hover {
   border-top: 1px;
   padding-bottom: 1px;
 }
