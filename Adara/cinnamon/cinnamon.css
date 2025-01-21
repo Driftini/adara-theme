@@ -149,9 +149,7 @@ StEntry StIcon,
   icon-size: 16px;
 }
 
-StEntry:focus > StIcon,
-StEntry:active > StIcon,
-StEntry:pressed > StIcon,
+StEntry:focus > StIcon, StEntry:active > StIcon, StEntry:pressed > StIcon,
 .menu StEntry:focus > StIcon,
 .menu StEntry:active > StIcon,
 .menu StEntry:pressed > StIcon,
@@ -1044,6 +1042,10 @@ StEntry:pressed > StIcon,
 
 .grouped-window-list-item-box:closed {
   /* ! */
+}
+
+.grouped-window-list-item-box .progress {
+  background-color: rgba(51, 204, 51, 0.5);
 }
 
 .grouped-window-list-badge {
@@ -2412,9 +2414,7 @@ StEntry:pressed > StIcon,
   icon-size: 16px;
 }
 
-.menu .slingshot .entry:focus > StIcon,
-.menu .slingshot .entry:active > StIcon,
-.menu .slingshot .entry:pressed > StIcon {
+.menu .slingshot .entry:focus > StIcon, .menu .slingshot .entry:active > StIcon, .menu .slingshot .entry:pressed > StIcon {
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -2786,18 +2786,12 @@ StEntry:pressed > StIcon,
   font-size: 100%;
 }
 
-.panel-bottom .stopwatch-running, .panel-bottom
-.stopwatch-paused, .panel-bottom
-.stopwatch-ready:hover, .panel-bottom
-.stopwatch-paused:hover {
+.panel-bottom .stopwatch-running, .panel-bottom .stopwatch-paused, .panel-bottom .stopwatch-ready:hover, .panel-bottom .stopwatch-paused:hover {
   border-bottom: 1px;
   padding-top: 1px;
 }
 
-.panel-top .stopwatch-running, .panel-top
-.stopwatch-paused, .panel-top
-.stopwatch-ready:hover, .panel-top
-.stopwatch-paused:hover {
+.panel-top .stopwatch-running, .panel-top .stopwatch-paused, .panel-top .stopwatch-ready:hover, .panel-top .stopwatch-paused:hover {
   border-top: 1px;
   padding-bottom: 1px;
 }
